@@ -1,50 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phonie</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
+
 <body>
-    <nav>
-      <div class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#Proceed">Main Page</a>
+
+  <nav class="nav-tab">
+    <!-- replace p tag with logo image -->
+    <p id="logo_id"> LOGO </p>
+
+    <ul class="nav-link">
+      <li> <a class="active" id="home" href="#home">Home</a></li>
+      <li> <a id="sign-in" href="#signIn"> Sign-In</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-body">
+    <div class="wrap" id="home">
+      <div id="arrow-left" class="arrow"></div>
+      <div id="slider">
+        <div class="slide slide1">
+          <div class="slide-content">
+            <span> Phonie, the answer to all your data needs...</span>
+            <input type="button" value="Click to Sign-In" id="btn1">
+          </div>
+        </div>
+        <div class="slide slide2">
+          <div class="slide-content">
+            <span>  Phonie, the answer to all your data needs...</span>
+            <input type="button" value="Click to Sign-In" id="btn2">
+          </div>
+        </div>
+        <div class="slide slide3">
+          <div class="slide-content">
+            <span>  Phonie, the answer to all your data needs...</span>
+            <input type="button" value="Click to Sign-In" id="btn3">
+          </div>
+        </div>
+        <div class="slide slide4">
+          <div class="slide-content">
+            <span>  Phonie, the answer to all your data needs... </span>
+            <input type="button" value="Click to Sign-In" id="btn4">
+          </div>
+        </div>
       </div>
-    </nav>
-  
-    <div class="container">
-        <!-- div tag to containerize the image-->
-        <div class="image">
-            <img src="" alt="">
-        </div>
-
-        <div class="form">
-        <!-- div tag to containerize the forms-->
-            <form action="">
-                <div class="input">
-                    <h3>Please input your details</h3>
-                </div>
-
-                <div class="forms">
-                    <label for="number"><b>Number</b></label>
-                    <input type="number" placeholder="Enter your number" name="phone-number" id="phone-number" required>
-
-                    <button type="submit" class="checkbtn">Check for your Network Provider</button>
-                </div>
-            </form>
-        </div>
+      <div id="arrow-right" class="arrow"></div>
     </div>
-    
-    <h2>make some magic here!!</h2>
-    
-  
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+    <div class="form-body" id="sign-in">
+      <div class="describe">
+        <img src="" />
+        <span> text here</span>
+      </div>
+
+      <form class="form" method="post" action="">
+        <div class="div-form">
+          <div class="input-email">
+            <label for="email"> Email </label>
+            <input type="text" name="email" id="email" pattern="[\w._+-]+@[\w.-]+\.[a-z]{2,}$"
+              title="Must be in the format: character@character.domain" placeholder="Enter your email here" required>
+
+            <p id="email-error"> Incorrect Email Input Format! </p>
+          </div>
+
+          <div class="input-username">
+            <label for="username"> Username</label>
+            <input type="text" name="username" id="user-name" pattern="^[\w]{6,10}$"
+              title="Must contain six or more characters" placeholder="Enter your username here" required />
+
+            <p id="user-name-error"> Incorrect Username Input Format! </p>
+          </div>
+
+          <div class="input-password">
+            <label for="password"> Password</label>
+            <input type="text" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,12}$"
+              title="Must contain at least 7 characters which consist of at least one uppercase, lowercase and number"
+              placeholder="Enter your password here" required>
+
+            <p id="password-error"> Incorrect Password Input Format! </p>
+          </div>
+
+          <div class="input-phone">
+            <label for="phone"> Phone</label>
+            <input type="tel" name="phoneNumber" id="phone-number" pattern="^[\d]{11,13}$"
+              title="Must contain 11-13 numbers if matched with your country code"
+              placeholder="Write your phone number here" required />
+
+            <p id="number-error"> Incorrect Phone Number Input Format! </p>
+          </div>
+
+          <div class="input-sub">
+            <label for="sub-plan"> Choose Preferred Subscription Plan</label>
+
+            <select name="sub-select" id="sub-select">
+              <option value="5000=15gb">5000 = 15gb</option>
+              <option value="3000=10gb">3000 = 10gb</option>
+              <option value="2000=7gb">2000 = 7gb</option>
+              <option value="1000=5gb">1000 = 5gb</option>
+              <option value="500=3gb"> 500 = 3gb</option>
+              <option value="300=2gb"> 300 = 2gb</option>
+              <option value="200=1gb"> 200 = 1gb</option>
+              <option value="100=500mb"> 100 = 500mb</option>
+            </select>
+          </div>
+
+          <input id="btn-submit" type="button" value="Submit">
+        </div>
+
+      </form>
+
+    </div>
+    </div>
+
+
+    </div>
+
+
+  </main>
+
+  <!-- <footer> copyright @2022</footer> -->
+
+
+  <script src="/index.js"></script>
 </body>
+
 </html>

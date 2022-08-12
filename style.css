@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: Salmon;
+  color: black;
+}
+
 .nav-tab{
     display: flex;
     flex-direction: row;

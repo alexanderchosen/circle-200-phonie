@@ -1,0 +1,403 @@
+.root {
+    /* font-size: 100%; */
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #233975;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    
+}
+
+a{
+    text-decoration:none;
+    color: #01082e;
+}
+a:hover{
+    color: rgb(179, 179, 179);
+}
+
+.site-header{
+    overflow: hidden;
+    /* background-color: white; */
+    /* border-bottom: 0.5px  white; */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #01082e, #2d0b00);
+    height: 35px;
+  }
+  
+  .header{
+    width: fit-content;
+    
+}
+  
+  .logo {
+    width: 70px;
+    margin: 0px 0px 10px 10px;
+    cursor: pointer;
+    height: fit-content;
+    }
+    
+  .site-navigation ul{
+    margin:0;
+    
+  /* margin:0; */
+  }
+
+  .site-navigation li{
+      display: inline-block;
+      align-self: center;
+      justify-self: center;
+      /* margin: 1.4em 1em 1em 1em; */
+      margin: 5px;
+      padding:5px;
+      font-size: small;
+      color: white;
+      border-right: 2px solid rgb(240, 196, 115);
+      
+  }
+
+  .site-navigation li:last-child{
+    border-right: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  /* .header {
+      grid-column-start: 1;
+      grid-column-end: 4;} */
+
+h1 {
+    font-size: 2.20rem;
+    font-weight: 700;
+    font-family: cursive;
+    color:rgb(241, 173, 47);
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+a {
+    text-decoration: none;
+    color: cadetblue;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(235, 180, 78);
+}
+.small {
+    font-size: 80%;
+    text-align: center;
+}
+
+.copy p{
+    color: yellow;
+}
+
+.input-container .cta em{
+    font-size: smaller;
+    color: yellow;
+}
+.input-container span{
+    display: none;
+}
+.split-screen {
+  
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/woman-7376415__480.webp);
+    background-position: initial;
+    background-size: cover;
+}
+
+.left {
+     height: 200px;
+
+}
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.left .copy {
+    color: white;
+    text-align: center;
+}
+.left p{
+    font-weight: 400;
+}
+
+
+.right .copy {
+    color: black;
+    text-align: center;
+    text-underline-position: below;
+
+}
+
+.copy-legal p{
+    color: black;
+    text-align: center;
+}
+
+.right .copy h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #130501;
+}
+.right .copy .login-container p {
+    /* margin: 1.0em 0; */
+    font-size:smaller;
+    margin-top: 2px;
+    color: #130501;
+
+}
+.right form {
+  width: 320px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"]{
+    display: block;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px sold #c4c4c4;
+    padding: 1.05em;
+    margin-bottom: 1.25rem;
+    font-size: small;
+
+}
+label {
+    display: block;
+    /* margin-bottom: 0.5rem; */
+    font-size: smaller;
+    color: #130501;
+    font-weight: bold;
+}
+.input-container {
+    position: relative;
+}
+
+.input-container input::placeholder{
+    font-size: smaller;
+    
+}
+.input-container .glo{
+   
+    width:40px;
+    height: 40px;
+    position: absolute;
+    top: 19px;
+    right: 55px;
+}
+
+
+.input-container .cta {
+    display: flex;
+    flex-direction: row;
+}
+.input-container .cta input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.input-container .cta {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 0 0;
+}
+.input-container .cta input:checked{
+    background-color:#01082e;
+    border: 1px solid #01082e;
+}
+
+/* .input-container .cta span{
+    font-size: smaller;
+    font
+} */
+
+.name span, .phone span, .password span, .email span{
+    font-style: italic;
+    font-size: xx-small;
+    font-weight: bold;
+    color: red;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked-.checkmark:after {
+    display: block;
+}
+.checkbox-container.checkmark:after {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    transform: rotate(45deg);
+}
+.signup-btn {
+display: block;
+width: 90%;
+background: var(--primary-blue);
+color: #130501;
+font-weight: 900;
+border: 1px sold white;
+padding: 0.7rem;
+border-radius: 8px;
+font-size: 0.75rem;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 0;
+}
+.signup-btn:hover {
+    background: #01082e;
+    color: whitesmoke;
+}
+
+.copy-legal{
+    margin-top: 0;
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.copy-legal .small u{
+    color:#01082e;
+}
+
+
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* 00093c */
+    background: linear-gradient(to right, #01082e, #2d0b00);
+    color: #fff;
+    padding: 50px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+/* 
+.footer .social-icons{
+    align-items: center;
+} */
+@media(max-height:800px) {
+    footer{position: static;}
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+
+
+.flex_logo{
+width: 80px;
+height: auto;
+margin-bottom: 2px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+border-bottom: 1px solid #ccc;
+margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.form2 {
+    width: fit-content;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+     margin-bottom: 50px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    background: transparent;
+    margin-right: 15px;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+}
+.underline{
+    width: 100px;
+    height: 1px;
+    background: #767676;
+    border-radius: 2px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+@media screen and (min-width: 900px) {
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}

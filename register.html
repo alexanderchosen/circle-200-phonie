@@ -12,15 +12,16 @@
         <header class ="site-header">
                 <div class="container">
                      <div class="header">
-                              <img src="images/PHONIE MN.png" alt="logo" class="logo">
+                              <img src="/images/PHONIE MN.png" alt="logo" class="logo">
                     </div>
                      </div>
                  </div>
+               
              
                  <nav id="navbar" class="site-navigation">
                      <ul id="menu" class="nav">
                          <li><a href="index.html">Home</a></li>
-                         <li><a href="register.html">Register</a></li>
+                         <li><a href="#">Register</a></li>
                          
                      </ul>
                  </nav>
@@ -30,8 +31,8 @@
     <div class="split-screen">
         <div class="left">
             <section class="copy">
-                <h1>Welcome to the Phonie</h1>
-                <p>Buying of Airtime & Data Subscription on your mobile phone made easy!</p>
+                <h1>Welcome to the Phonie Website</h1>
+                <p>Buying of Airtime & Data Subscription through your mobile phone made easy!</p>
             </section>
         </div>
         <div class="right">
@@ -39,12 +40,14 @@
             <section class="copy">
                 <h2>Sign Up</h2>
                 <div class="login-container">
-                    <p>Already have an Account? <a href="a"> <strong>Log-in</strong></a></p>
+                    <p>Already have an Account? <a href="a"> <strong>Login</strong></a></p>
                 </div>
             </section>
             <div class="input-container name">
                 <label for="fname">Username</label>
-                <input type="text" id="fname" name="fname" 
+                <input type="text" 
+                id="username" 
+                name="fname" 
                 pattern= "^[\w]{6,10}$" 
                 title="Must contain six or more characters"
                 placeholder="Enter your username" required>
@@ -52,30 +55,40 @@
                 <span id="username-error"> Incorrect Name Input Format! </span>
             </div>
 
-            <div class="input-container email">
+            <div class="input-container email" >
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" pattern="[\w._+-]+@[\w.-]+\.[a-z]{2,}$"
-              title="Must be in the format: character@character.domain" placeholder="Enter your email here" required>
+                    <input type="email" id="email" 
+                    name="email" 
+                    id="email"
+                    pattern="[\w._+-]+@[\w.-]+\.[a-z]{2,}$"
+                    title="Must be in the format: character@character.domain" 
+                    placeholder="Enter your email here" required>
 
               <span id="email-error"> Incorrect Email Input Format! </span>
                 </div>
 
-                <div class="input-container phone">
+                <div class="input-container phone" >
                         <label for="phone">Phone Number</label>
                         <input type="tel" 
                         id="phone" 
                         name="phone" 
                         pattern="^(\+234)?[\d]{11,13}$" title="We accept only Glo numbers"
                         placeholder="Write your phone number here" required>
-                        <img class="glo" src="images/9mobile-official-logo.png" alt="network-logo" >
+                        <img class="glo" src="images/mtn.png" alt="network-logo">
 
-                      
+                        <ul class="autocomplete-list" id="phone-code-list">
+            
+                        </ul>
+
                         <span id="phone-error"> Incorrect! Use a Glo network number</span>
                     </div>
 
-                <div class="input-container password">
+
+                <div class="input-container password" >
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password"
+                        <input type="password" 
+                        id="password" 
+                        name="password"
                         pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,12}$" 
                         title="Must contain at least 7 characters which consist of at least one uppercase, lowercase and number"
                         placeholder="Enter your password here" required>
@@ -83,18 +96,20 @@
                         
             
                         <span id="password-error"> Incorrect Password Input Format! </span>
-                         
+                          
                     </div>
                    
                     <div class="input-container cta">
-                        <input type="checkbox">
-                        <em id="checkmark">Sign up for email updates</em>
+                        <label>
+                            <input type="checkbox" checked="checked"> Sign up for email updates
+                        </label>
+                    
                     </div>
 
 <button class="signup-btn" type="submit">Sign Up</button>
 <section class="copy-legal">
-    <p><span class="small">By continuing you agree to accept our <br> <u><a href="#">
-Privacy Policy</a> &amp; <a href="#">Terms of Service</u></a>.</span>
+    <span class="small">By continuing you agree to accept our <a href="#"><u>
+        Privacy Policy </a> &amp; <a href="#">Terms of Service.</u></a></span>
 </section>
 </form>
         </div>
@@ -103,7 +118,7 @@ Privacy Policy</a> &amp; <a href="#">Terms of Service</u></a>.</span>
 <footer>
     <div class="row">
         <div class="col">
-            <img src="images/PHONIE MN.png" class="flex_logo">
+            <img src="/images/PHONIE MN.png" class="flex_logo">
             <h2>About Phonie <div class="underline"></h2>
             <p>Phonie, your go-to website for purchasing data and airtime from anywhere in Nigeria.
                 You can also send to your friends and family in all states in the country.
@@ -123,7 +138,7 @@ Privacy Policy</a> &amp; <a href="#">Terms of Service</u></a>.</span>
                 <p>Lagos, Nigeria</p>
                 <p>Tabitha-Rukweve road, Jerry street, Lagos.</p>
                 <a href="#">Circle200@gmail.com</a>
-                <h4>+2347012156164 |+2347051284997</h4>        
+                <h4>+2347012156164 |+2347051284997 |+2348025329353</h4>        
                  </div>
             
                  <div class="col">
@@ -134,12 +149,10 @@ Privacy Policy</a> &amp; <a href="#">Terms of Service</u></a>.</span>
                      </form>
                      
                     </div>
-                    
                     <div class="social-icons">
-                            <h3>Follow Us <div class="underline"></div></h3>
-                        <img src="images/facebook-brands.svg" alt="facebook">
-                        <img src="images/twitter-brands.svg" alt="twitter">
-                        <img src="images/instagram-brands.svg" alt="instagram">
+                        <img src="/images/facebook-brands.svg" alt="facebook">
+                        <img src="/images/twitter-brands.svg" alt="twitter">
+                        <img src="/images/instagram-brands.svg" alt="instagram">
                        
                       </div>
     </div>
@@ -147,7 +160,7 @@ Privacy Policy</a> &amp; <a href="#">Terms of Service</u></a>.</span>
     <p class="copyright">© 2022 Alt School Circle 200 - All Rights Reserved</p> 
 </footer>
 
-<script src="index.js"></script>
 
+<script src="/index2.js"></script>
 </body>
 </html>

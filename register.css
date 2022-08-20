@@ -77,15 +77,18 @@ h1 {
     font-weight: 700;
     font-family: cursive;
     color:rgb(241, 173, 47);
+    
 }
+
+
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 700;
     
 }
 a {
     text-decoration: none;
-    color: cadetblue;
+    color: var(--primary-blue);
 }
 a:hover {
     text-decoration: underline;
@@ -108,10 +111,11 @@ a:hover {
     display: none;
 }
 .split-screen {
-  
+    border: 0px solid whitesmoke;
+    margin:0;
     display: flex;
-    flex-direction: column;
-    background-image: url(images/woman-7376415__480.webp);
+    flex-direction: row;
+    background-image: url(/images/woman-7376415__480.webp);
     background-position: initial;
     background-size: cover;
 }
@@ -129,6 +133,7 @@ a:hover {
 .left .copy {
     color: white;
     text-align: center;
+    margin-left: 50px;
 }
 .left p{
     font-weight: 400;
@@ -142,13 +147,8 @@ a:hover {
 
 }
 
-.copy-legal p{
-    color: black;
-    text-align: center;
-}
-
 .right .copy h2{
-    font-size: 1.5rem;
+    font-size: medium;
     font-weight: 700;
     margin-bottom: 0px;
     color: #130501;
@@ -161,7 +161,8 @@ a:hover {
 
 }
 .right form {
-  width: 320px;
+    margin-top: 50px;
+    width: 70%;
 }
 form input[type="text"],
 form input[type="email"],
@@ -171,9 +172,9 @@ form input[type="password"]{
     width: 90%;
     box-sizing: border-box;
     border-radius: 8px;
-    border: 2px sold #c4c4c4;
-    padding: 1.05em;
-    margin-bottom: 1.25rem;
+    border: 1px sold #c4c4c4;
+    padding: 5px;
+    margin-bottom: 0px;
     font-size: small;
 
 }
@@ -192,16 +193,11 @@ label {
     font-size: smaller;
     
 }
-.input-container .glo{
-   
-    width:40px;
-    height: 40px;
+.input-container .password i {
     position: absolute;
-    top: 19px;
-    right: 55px;
+    top: 42px;
+    right: 16px;
 }
-
-
 .input-container .cta {
     display: flex;
     flex-direction: row;
@@ -226,6 +222,42 @@ label {
     border: 1px solid #01082e;
 }
 
+.autocomplete-list{
+    position: relative;
+    /* top: 100;
+    left: 0; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 90%;
+    max-height: 70px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.autocomplete-list li{
+    color: #130501 ;
+    margin: 0;
+    padding: 3px 15px;
+    /* width: calc(90% - 30px); */
+    width: 90%;
+    border: 1px solid #01082e;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+.input-container .glo{
+   
+    width:35px;
+    height: 23px;
+    position: absolute;
+    top: 19px;
+    right: 45px;
+}
+
+
 /* .input-container .cta span{
     font-size: smaller;
     font
@@ -234,8 +266,11 @@ label {
 .name span, .phone span, .password span, .email span{
     font-style: italic;
     font-size: xx-small;
-    font-weight: bold;
+    font-weight:bolder;
     color: red;
+    display: none;
+    margin-top: 2px;
+    word-spacing: 2px;
 }
 
 
@@ -360,8 +395,8 @@ ul li a{
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
